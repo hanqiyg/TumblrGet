@@ -1,0 +1,15 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:defaultValue="/tumblr-%s-%s-%d.%s"
+        android:entries="@array/pref_storage_naming_title"
+        android:entryValues="@array/pref_storage_naming_values"
+        android:key="naming_rule"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_title_storage_naming" />
+
+<!--
+    <Preference android:title="@string/pref_title_system_sync_settings">
+        <intent android:action="android.settings.SYNC_SETTINGS" />
+    </Preference>-->
+</PreferenceScreen>

@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">GetTumblr</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="banner_ad_unit_id">ca-app-pub-7937974015796175/4787762836</string>
+    <string name="link_not_recognized">I can not recognize link [ %1$s ].</string>
+    <string name="success">Success</string>
+    <string name="failure">Failure</string>
+    <string name="not_found">Error occur when get links.\nMaybe because the post is a private post.\nPlease re-blog this post first,then try again.</string>
+    <string name="not_found_title">NOTFOUND</string>
+    <string name="source_post">Source:</string>
+    <string name="notecount_post">Notes</string>
+    <string name="redownload_message">The content is already downloaded, do you want to redo it?</string>
+    <string name="not_selected">Please select at least one.</string>
+    <string name="isDeleteFile">Delete local file at the same time.</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+        <string name="pref_title_allow_mobile">Allow Mobile Download</string>
+        <string name="pref_description_allow_mobile">
+            Allow downloaing via mobile network may cost you.
+        </string>
+
+        <string name="pref_title_notification_visibility">Allow Notification Visible</string>
+        <string name="pref_description_notification_visibility">
+            Allow Download manager notification visible.
+        </string>
+
+        <string name="pref_storage_location">Storage Location</string>
+        <string name="pref_title_storage_localtion">Storage Location</string>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_Tumblr_settings">Tumblr Settings</string>
+        <string name="pref_title_storage_naming">Naming Rule</string>
+        <string-array name="pref_storage_naming_title">
+            <item>/tumblr-type-blog-post.ext</item>
+            <item>/tumblr/type/bolg-post.ext</item>
+            <item>/tumblr/type/blog/post.ext</item>
+        </string-array>
+        <string-array name="pref_storage_naming_values">
+            <item>/tumblr-%s-%s-%d.%s</item>
+            <item>/tumblr/%s/%s-%d.%s</item>
+            <item>/tumblr/%s/%s/%d.%s</item>
+        </string-array>
+<!--        <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>-->
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="string_mail_sent">Message was sent to manager.</string>
+</resources>

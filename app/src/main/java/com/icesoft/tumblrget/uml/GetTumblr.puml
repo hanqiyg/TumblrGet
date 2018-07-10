@@ -1,0 +1,28 @@
+@startuml
+class MainActivity{
+    + Intent.ACTION_SEND url
+}
+MainActivity --> TumblrApiService : "Is Tumblr url"
+class TumblrApiService{
+    + String get(String url,AsyncHttpResponseHandler handler)
+}
+TumblrApiService    --* HttpRequestBuilder : implements
+interface HttpRequestBuilder{
+    + String get(String url,AsyncHttpResponseHandler handler)
+}
+TumblrApiService --|> TumblrSelectFragment : String Json
+class TumblrSelectFragment
+class TumblrVideoViewHolder
+class TumblrPhotoViewHolder
+class TumblrRecyclerAdapter
+
+TumblrRecyclerAdapter --|> TumblrSelectFragment
+TumblrPhotoViewHolder --|> TumblrRecyclerAdapter
+TumblrVideoViewHolder --|> TumblrRecyclerAdapter
+
+TumblrRecyclerAdapter --|> DownloadFragment
+TumblrSelectFragment --> DownloadFragment
+class DownloadFragment
+
+
+@enduml

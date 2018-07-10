@@ -1,0 +1,19 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="allow_mobile"
+        android:summary="@string/pref_description_allow_mobile"
+        android:title="@string/pref_title_allow_mobile" />
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="notification_visibility"
+        android:summary="@string/pref_description_notification_visibility"
+        android:title="@string/pref_title_notification_visibility" />
+
+    <ListPreference
+        android:key="storage_location"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_title_storage_localtion" />
+</PreferenceScreen>
